@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@vueuse/core": "^10.9.0",
+    "copy-webpack-plugin": "^13.0.0",
     "serve": "^14.2.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

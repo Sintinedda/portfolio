@@ -87,7 +87,7 @@
 <template>
     <div id="modal">
         <section v-for="(work, index) in works">
-            <button @click="openModal"><img :src="`../src/assets/img/${work.image}.png`" :id="index" :alt="`${work.image}`"><br>
+            <button @click="openModal"><img :src="`../public/assets/${work.image}.png`" :id="index" :alt="`${work.image}`"><br>
             <h3>{{ work.nom }}</h3></button>
             <MyModal :currentProject="selectedProject" :isOpen="isModalOpened" @modal-close="closeModal" name="first-modal">
                 <template #header>
