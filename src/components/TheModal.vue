@@ -7,20 +7,20 @@
             nom: "Curriculum Vitae",
             date: "16/01/2024",
             gitHub: "https://github.com/Sintinedda/Curriculum-vitae-Jeremy-Aboudan-",
-            pdf : "../../dist/assets/monCv.pdf",
+            pdf : "../../public/monCv.pdf",
             image: "work-1"
         },
         {
             nom: "Cahier des charges",
             date: "06/02/2024",
-            pdf : "../../dist/assets/cahierDesCharges.pdf",
+            pdf : "../../public/cahierDesCharges.pdf",
             image: "work-2"
         },
         {
             nom: "Espace commentaire dynamique",
             date: "18/02/2024",
             gitHub: "https://https://github.com/Sintinedda/Dynamiser-un-espace-commentaire",
-            pdf : "../../dist/assets/espaceCommentaireDynamique.pdf",
+            pdf : "../../public/espaceCommentaireDynamique.pdf",
             image: "work-3"
         },
         {
@@ -33,7 +33,7 @@
             nom: "Au petit village",
             date:  "22/07/2024",
             gitHub: "https://github.com/Sintinedda/au-petit-village",
-            pdf: "../../dist/assets/AuPetitVillage.pdf",
+            pdf: "../../public/AuPetitVillage.pdf",
             image: "angular"
         },
         {
@@ -87,7 +87,7 @@
 <template>
     <div id="modal">
         <section v-for="(work, index) in works">
-            <button @click="openModal"><img :src="`../dist/assets/${work.image}.png`" :id="index" :alt="`${work.image}`"><br>
+            <button @click="openModal"><img :src="`../public/assets/${work.image}.png`" :id="index" :alt="`${work.image}`"><br>
             <h3>{{ work.nom }}</h3></button>
             <MyModal :currentProject="selectedProject" :isOpen="isModalOpened" @modal-close="closeModal" name="first-modal">
                 <template #header>
