@@ -28,7 +28,7 @@
                 </div>
                 <div class="modal-footer">
                     <slot name="footer">
-                        <img :src="`../src/assets/img/${currentProject.image}.png`" :alt="`${currentProject.image}`">
+                        <img :src="`../dist/assets//${currentProject.image}.png`" :alt="`${currentProject.image}`">
                     </slot>
                 </div>
             </div>
